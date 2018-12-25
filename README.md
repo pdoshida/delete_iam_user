@@ -11,8 +11,10 @@ export AWS_SECRET_ACCESS_KEY="xxxxxxxxxxx"
 export AWS_DEFAULT_REGION="ap-northeast-1"
 export AWS_DEFAULT_OUTPUT="json"
 ```
-// 面倒なので事前にconfigureしておいて第２引数で実行するだけのshにして手順削減したい
-
+複数アカウント対応する場合、プロファイル切り替えが必要。
+```
+export AWS_DEFAULT_PROFILE=user1
+```
 2. 引数にusernameつけて実行
 ```
 ./delete_iam_user.sh ${username}
